@@ -1,6 +1,6 @@
 /***********************************************************************************
-  MoodyMaze
-  by Scott Kildall
+  Project 2
+  by Hannah Gabany
 
   Uses the p5.2DAdventure.js class 
   
@@ -32,7 +32,7 @@ const A_KEY = 65;
 //---
 
 //-- MODIFY THIS for different speeds
-var speed = 10;
+var speed = 5;
 
 //--- Your globals would go here
 
@@ -58,11 +58,11 @@ function setup() {
   playerAvatar = new Avatar("Player", 640, 400);
    
   // MODIFY THIS: to make your avatar go faster or slower
-  playerAvatar.setMaxSpeed(20);
+  playerAvatar.setMaxSpeed(10);
 
   // MODIFY THIS: add your filenames here, right now our moving animation and standing animation are the same
-  playerAvatar.addMovingAnimation( 'assets/blueblob-01.png', 'assets/blueblob-05.png');
-  playerAvatar.addStandingAnimation('assets/blueblob-01.png', 'assets/blueblob-05.png');
+  playerAvatar.addMovingAnimation( 'assets/BrainWalkingforward01_.png', 'assets/BrainWalkingforward01_.png');
+  playerAvatar.addStandingAnimation('assets/BrainStandingright01_.png', 'assets/BrainStandingleft01_.png');
 
   //--- TEMPLATE STUFF: Don't change
   // use this to track movement from toom to room in adventureManager.draw()
