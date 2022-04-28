@@ -1,8 +1,8 @@
 CurrentState,ClickableName,MapDirection,NextState
 Splash,,,Instructions
 Instructions,StartGame,,Start
-Start,,E,Determined
-Calm,,S,Start
+Start,,E,Bus
+Bus,,N,School
 Calm,,W,Determined
 Calm,,E,Sleepy
 Determined,,E,Calm
