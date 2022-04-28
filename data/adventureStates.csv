@@ -1,9 +1,9 @@
 ID,StateName,ClassName,PNGFilename,CollisionFilename
 0,Splash,PNGRoom,assets/Startupscreen.png,
 1,Instructions,InstructionsScreen,assets/Instructions_.png,
-2,Start,PNGRoom,assets/Start.png,
-3,Determined,PNGRoom,assets/Determined.png,
-4,Calm,PNGRoom,assets/Calm.png,
+2,Start,PNGRoom,assets/Bedroom.png,
+3,Determined,PNGRoom,assets/Bus.png,
+4,Calm,PNGRoom,assets/School.png,
 5,Sleepy,PNGRoom,assets/Sleepy.png,
 6,Mad,PNGRoom,assets/Mad.png,
 7,Unlucky,NPCRoom,assets/Unlucky.png,

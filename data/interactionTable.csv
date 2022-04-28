@@ -1,10 +1,7 @@
 CurrentState,ClickableName,MapDirection,NextState
 Splash,,,Instructions
 Instructions,StartGame,,Start
-Start,,N,Calm
-Start,,S,Surprised
-Start,,W,Mad
-Start,,E,Unlucky
+Start,,E,Determined
 Calm,,S,Start
 Calm,,W,Determined
 Calm,,E,Sleepy
