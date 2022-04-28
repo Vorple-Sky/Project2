@@ -3,7 +3,7 @@ Splash,,,Instructions
 Instructions,StartGame,,Start
 Start,,E,Bus
 Bus,,N,School
-Calm,,W,Determined
+School,,W,Determined
 Calm,,E,Sleepy
 Determined,,E,Calm
 Determined,,S,Mad
