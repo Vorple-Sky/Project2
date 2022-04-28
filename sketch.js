@@ -61,7 +61,7 @@ function setup() {
   playerAvatar.setMaxSpeed(10);
 
   // MODIFY THIS: add your filenames here, right now our moving animation and standing animation are the same
-  playerAvatar.addMovingAnimation( 'assets/BrainWalkingforward01_.png', 'assets/BrainWalkingforward01_.png');
+  playerAvatar.addMovingAnimation( 'assets/BrainWalkingforward01_.png', 'assets/BrainWalkingforward02.png');
   playerAvatar.addStandingAnimation('assets/BrainStandingright01_.png', 'assets/BrainStandingleft01_.png');
 
   //--- TEMPLATE STUFF: Don't change
