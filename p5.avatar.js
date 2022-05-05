@@ -25,7 +25,7 @@ class Avatar  {
     this.name = name;
     this.sprite = createSprite(x, y);
     
-    this.maxSpeed = 6;
+    this.maxSpeed = 4;
     this.hasStandingAnimation = false;
     this.hasMovingAnimation = false;
 
