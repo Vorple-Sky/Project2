@@ -13,7 +13,7 @@
 
 //--- TEMPLATE STUFF: Don't change
 
-// adventure manager global  
+// adventure manager global
 var adventureManager;
 
 // p5.play
