@@ -44,8 +44,8 @@ class Avatar  {
   }
 
   // adds a standing animation (optional)
-  addStandingAnimation(startPNGPath, endPNGPath) {
-    this.sprite.addAnimation('standing', startPNGPath, endPNGPath);
+  addStandingAnimation(startPNGPath, /*endPNGPath*/) {
+    this.sprite.addAnimation('standing', startPNGPath, /*endPNGPath*/);
     this.hasStandingAnimation = true;
   }
 

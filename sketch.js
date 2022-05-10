@@ -62,7 +62,7 @@ function setup() {
 
   // MODIFY THIS: add your filenames here, right now our moving animation and standing animation are the same
   playerAvatar.addMovingAnimation( 'assets/BrainWalkingforward01_.png', 'assets/BrainWalkingforward02.png');
-  playerAvatar.addStandingAnimation('assets/BrainStandingright01_.png', 'assets/BrainStandingleft01_.png');
+  playerAvatar.addStandingAnimation('assets/BrainStandingright01_.png');
 
   //--- TEMPLATE STUFF: Don't change
   // use this to track movement from toom to room in adventureManager.draw()
