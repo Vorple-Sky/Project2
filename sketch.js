@@ -14,6 +14,7 @@
 //--- TEMPLATE STUFF: Don't change
 
 // adventure manager global
+
 var adventureManager;
 
 // p5.play
@@ -88,7 +89,10 @@ function setup() {
 function draw() {
   //--- TEMPLATE STUFF: Don't change
   // draws background rooms and handles movement from one to another
+
+
   adventureManager.draw();
+
 
   // draw the p5.clickables, in front of the mazes but behind the sprites 
   clickablesManager.draw();
@@ -108,6 +112,7 @@ function draw() {
     //--
   } 
 }
+
 
 function keyPressed() {
   adventureManager.keyPressed();
@@ -214,7 +219,7 @@ class InstructionsScreen extends PNGRoom {
   draw() {
     // tint down background image so text is more readable
     //tint(128);
-      
+     
     // this calls PNGRoom.draw()
     super.draw();
       
@@ -233,8 +238,8 @@ class InstructionsScreen extends PNGRoom {
 class NPCRoom extends PNGRoom {
   preload() {
     // define class varibles here, load images or anything else
-    this.npc1 = new NPC("Blobbie", 400, 160, 'assets/blob02.png');
-    this.npc1.addSingleInteraction("Hello, I\'m Blobbie! I\'m a static NPC.");
+    this.npc1 = new NPC("Classmate", 400, 160, 'assets/Npc1.png');
+    this.npc1.addSingleInteraction("Hello, I\'m your classmate! I\'m new, let's be friends!.");
 
     this.npc2 = new NPC("Sunny Side", 300, 500, 'assets/sun1.png');
     this.npc2.addStandingAnimation('assets/sun1.png', 'assets/sun3.png');

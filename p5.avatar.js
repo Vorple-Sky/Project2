@@ -235,7 +235,7 @@ class NPC extends Avatar {
 
   // MODIFY THIS - drawing of the prompt
   drawPrompt() {
-      fill('white');
+      fill('Black');
       textSize(14);
       
       textAlign(CENTER);
