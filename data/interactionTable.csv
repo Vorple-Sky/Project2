@@ -2,7 +2,9 @@ CurrentState,ClickableName,MapDirection,NextState
 Splash,,,Instructions
 Instructions,StartGame,,Start
 Start,,E,Bus
-Bus,,N,School
+Bus,,E,Toschool
+Toschool,,N,School
 School,,W,Towork
 Towork,,W,Gym
-Gym,,E,Calm
+Gym,,S,Frontdoor
+Frontdoor,,E,Start
