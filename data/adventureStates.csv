@@ -4,7 +4,7 @@ ID,StateName,ClassName,PNGFilename,CollisionFilename
 2,Start,PNGRoom,assets/Bedroom.png,
 3,Bus,PNGRoom,assets/Bus.png,
 4,School,PNGRoom,assets/School.png,
-5,Towork,PNGRoom,assets/Towork_.png,
+5,Towork,PNGRoom,assets/Towork-.png,
 6,Gym,PNGRoom,assets/Gym.png,
 7,Unlucky,NPCRoom,assets/Unlucky.png,
 8,Anxious,PNGRoom,assets/Anxious.png,
