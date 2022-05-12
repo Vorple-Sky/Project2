@@ -238,17 +238,8 @@ class InstructionsScreen extends PNGRoom {
 class NPCRoom extends PNGRoom {
   preload() {
     // define class varibles here, load images or anything else
-    this.npc1 = new NPC("Classmate", 400, 160, 'assets/Npc1.png');
-    this.npc1.addSingleInteraction("Hello, I\'m your classmate! I\'m new, let's be friends!.");
-
-    this.npc2 = new NPC("Sunny Side", 300, 500, 'assets/sun1.png');
-    this.npc2.addStandingAnimation('assets/sun1.png', 'assets/sun3.png');
-    this.npc2.addSingleInteraction("Nice to meet ya! I\'m Sunny Side, an animated NPC.");
-    this.npc2.addSingleInteraction("I'm hungry!");
-    
-    //this.npc2.addSingleInteraction("If you wouldn\'t mind...I could really use a star right now!");
-    //this.npc2.setupQuest("Star", "Thanks! This is just what I needed", "I didn't ask for that!");
-
+    this.npc1 = new NPC("Classmate", 850, 360, 'assets/Npc1.png');
+    this.npc1.addSingleInteraction("Hello, I\'m your classmate! \n I\'m new, let's be friends!.");
     
     // setup flag, seto false
     this.hasSetup = false;
@@ -263,9 +254,7 @@ class NPCRoom extends PNGRoom {
       this.npc1.setup();
       this.npc1.setPromptLocation(0,-30);
       
-      // setup NPC 2
-      this.npc2.setup();
-      this.npc2.setPromptLocation(0,-100);
+      
 
       this.hasSetup = true; 
     }
@@ -275,38 +264,219 @@ class NPCRoom extends PNGRoom {
 
     // draw our NPCs
     drawSprite(this.npc1.sprite);
-    drawSprite(this.npc2.sprite);
+    
 
     // When you have multiple NPCs, you can add them to an array and have a function 
     // iterate through it to call this function for each more concisely.
     this.npc1.displayInteractPrompt(playerAvatar);
-    this.npc2.displayInteractPrompt(playerAvatar);
-  }
-
-  // custom code here to do stuff upon exiting room
-  unload() {
-    // reset NPC interaction to beginning when entering room
-    this.npc2.resetInteraction();
-  }
-
-  // custom code here to do stuff upon entering room
-  load() {
-    // pass to PNGRoom to load image
-    super.load();
     
-    // Add custom code here for unloading
-  }
-
-  keyPressed() {
-    if(key === ' ') {
-      if(this.npc2.isInteracting(playerAvatar)) {
-        this.npc2.continueInteraction();
-      }
-    }
   }
 
 }
 
+class NPCRoom1 extends PNGRoom {
+  preload() {
+    // define class varibles here, load images or anything else
+    this.npc1 = new NPC("Friend", 830, 450, 'assets/Npc5.png');
+    this.npc1.addSingleInteraction("Hey pal, How are you? \n Lets catch up sometime.");
+    
+    // setup flag, seto false
+    this.hasSetup = false;
+  }
+
+  // call the PNGRoom superclass's draw function to draw the background image
+  // and draw our code adter this
+  draw() {
+    // Idea is to call the npc1.setup() function ONE time, so we use this kind of flag
+    if( this.hasSetup === false ) {
+      // setup NPC 1
+      this.npc1.setup();
+      this.npc1.setPromptLocation(0,-30);
+      
+      
+
+      this.hasSetup = true; 
+    }
+
+    // this calls PNGRoom.draw()
+    super.draw();
+
+    // draw our NPCs
+    drawSprite(this.npc1.sprite);
+    
+
+    // When you have multiple NPCs, you can add them to an array and have a function 
+    // iterate through it to call this function for each more concisely.
+    this.npc1.displayInteractPrompt(playerAvatar);
+    
+  }
+
+  
+
+}
+
+class NPCRoom2 extends PNGRoom {
+  preload() {
+    // define class varibles here, load images or anything else
+    this.npc1 = new NPC("Teacher", 750, 550, 'assets/Npc1.png');
+    this.npc1.addSingleInteraction("Hello Brain, I wanted to check in \n I noticed you are not doing your work...");
+    
+    // setup flag, seto false
+    this.hasSetup = false;
+  }
+
+  // call the PNGRoom superclass's draw function to draw the background image
+  // and draw our code adter this
+  draw() {
+    // Idea is to call the npc1.setup() function ONE time, so we use this kind of flag
+    if( this.hasSetup === false ) {
+      // setup NPC 1
+      this.npc1.setup();
+      this.npc1.setPromptLocation(0,-30);
+      
+      
+
+      this.hasSetup = true; 
+    }
+
+    // this calls PNGRoom.draw()
+    super.draw();
+
+    // draw our NPCs
+    drawSprite(this.npc1.sprite);
+    
+
+    // When you have multiple NPCs, you can add them to an array and have a function 
+    // iterate through it to call this function for each more concisely.
+    this.npc1.displayInteractPrompt(playerAvatar);
+    
+  }
+
+  
+
+}
+
+class NPCRoom3 extends PNGRoom {
+  preload() {
+    // define class varibles here, load images or anything else
+    this.npc1 = new NPC("Stranger", 400, 570, 'assets/Npc4.png');
+    this.npc1.addSingleInteraction("Hello, I\'m a bit lost \n Could you help me find my \n way around");
+    
+    // setup flag, seto false
+    this.hasSetup = false;
+  }
+
+  // call the PNGRoom superclass's draw function to draw the background image
+  // and draw our code adter this
+  draw() {
+    // Idea is to call the npc1.setup() function ONE time, so we use this kind of flag
+    if( this.hasSetup === false ) {
+      // setup NPC 1
+      this.npc1.setup();
+      this.npc1.setPromptLocation(0,-30);
+      
+      
+
+      this.hasSetup = true; 
+    }
+
+    // this calls PNGRoom.draw()
+    super.draw();
+
+    // draw our NPCs
+    drawSprite(this.npc1.sprite);
+    
+
+    // When you have multiple NPCs, you can add them to an array and have a function 
+    // iterate through it to call this function for each more concisely.
+    this.npc1.displayInteractPrompt(playerAvatar);
+    
+  }
+
+  
+
+}
+
+class NPCRoom4 extends PNGRoom {
+  preload() {
+    // define class varibles here, load images or anything else
+    this.npc1 = new NPC("Boss", 400, 570, 'assets/Npc2.png');
+    this.npc1.addSingleInteraction("Brain, your late again \n I\'m not happy about this.");
+    
+    // setup flag, seto false
+    this.hasSetup = false;
+  }
+
+  // call the PNGRoom superclass's draw function to draw the background image
+  // and draw our code adter this
+  draw() {
+    // Idea is to call the npc1.setup() function ONE time, so we use this kind of flag
+    if( this.hasSetup === false ) {
+      // setup NPC 1
+      this.npc1.setup();
+      this.npc1.setPromptLocation(0,-30);
+      
+      
+
+      this.hasSetup = true; 
+    }
+
+    // this calls PNGRoom.draw()
+    super.draw();
+
+    // draw our NPCs
+    drawSprite(this.npc1.sprite);
+    
+
+    // When you have multiple NPCs, you can add them to an array and have a function 
+    // iterate through it to call this function for each more concisely.
+    this.npc1.displayInteractPrompt(playerAvatar);
+    
+  }
+
+  
+
+}
+class NPCRoom5 extends PNGRoom {
+  preload() {
+    // define class varibles here, load images or anything else
+    this.npc1 = new NPC("Family", 230, 520, 'assets/Npc3.png');
+    this.npc1.addSingleInteraction("Brain, honey I\'m glad to see you heading home \n I\'m happy you are safe.");
+    
+    // setup flag, seto false
+    this.hasSetup = false;
+  }
+
+  // call the PNGRoom superclass's draw function to draw the background image
+  // and draw our code adter this
+  draw() {
+    // Idea is to call the npc1.setup() function ONE time, so we use this kind of flag
+    if( this.hasSetup === false ) {
+      // setup NPC 1
+      this.npc1.setup();
+      this.npc1.setPromptLocation(0,-30);
+      
+      
+
+      this.hasSetup = true; 
+    }
+
+    // this calls PNGRoom.draw()
+    super.draw();
+
+    // draw our NPCs
+    drawSprite(this.npc1.sprite);
+    
+
+    // When you have multiple NPCs, you can add them to an array and have a function 
+    // iterate through it to call this function for each more concisely.
+    this.npc1.displayInteractPrompt(playerAvatar);
+    
+  }
+
+  
+
+}
 //-- MODIFY THIS: for your own classes
 // (1) copy this code block below
 // (2) paste after //-- done copy
